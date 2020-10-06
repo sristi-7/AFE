@@ -30,7 +30,7 @@ class SignUp{
 
             userCount++;
             user.index=userCount;
-
+            user.updateCount(userCount);
             user.update();
             homePage= new Homepage();
             name1.hide();

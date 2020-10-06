@@ -4,7 +4,7 @@ class App {
     }
     start(){
         user=new User();
-        
+        user.getCount();
         form=new Form();
         form.display();
     }
