@@ -21,7 +21,7 @@ class Form{
         this.signIn.position(width/2-50,height/2+70);
 
         User.getUserInfo();
-        User.getFoodInfo();
+        
         this.button.mousePressed(()=>{
             newUser=new SignUp();
             newUser.display();
@@ -43,6 +43,9 @@ class Form{
 
                     this.hide();
                     homePage= new Homepage();
+                    food=new Food();
+                    Food.getFoodInfo();
+                    food.getFoodCount();
                     homePage.display();
                     flag=1;
                 }

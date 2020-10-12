@@ -41,11 +41,5 @@ static getUserInfo(){
        
     
 }
-static getFoodInfo(){
-    var foodInfoRef = database.ref("food");
-    foodInfoRef.on("value",(data)=>{
-        allfoods=data.val();
-    })
-}
 
 }
