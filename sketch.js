@@ -5,11 +5,13 @@ var newUser;
 var userCount=0;
 var homePage,allUsers;
 var allfoods;
-var food,foodCount;
+var food,foodCount=0;
+
 
 function setup() {
-  createCanvas(800,400);
+  createCanvas(windowWidth,windowHeight);
   database=firebase.database();
+  
   
   app=new App();
   app.start();
@@ -17,5 +19,5 @@ function setup() {
 
 function draw() {
  
-  drawSprites();
+
 }

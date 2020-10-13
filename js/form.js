@@ -13,8 +13,10 @@ class Form{
     }
 
     display(){
-        var title= createElement("h2","appname");
+        var title= createElement("h2","AFE");
+        var title1=createElement("h6","access for excess");
         title.position(width/2-50,20);
+        title1.position(width/2-100,40);
         this.username.position(width/2-50,height/2-20);
         this.password.position(width/2-50,height/2+10);
         this.button.position(width/2-50,height/2+40);
@@ -43,9 +45,8 @@ class Form{
 
                     this.hide();
                     homePage= new Homepage();
-                    food=new Food();
-                    Food.getFoodInfo();
-                    food.getFoodCount();
+                   
+                    
                     homePage.display();
                     flag=1;
                 }

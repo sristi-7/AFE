@@ -36,10 +36,20 @@ class Homepage{
                 button.position(width/2-50,height/2+140);
                 button.mousePressed(()=>{
                     foodCount ++
+                    food.foodname=foodName.value();
+                    food.quantity=quantity.value();
+                    food.phoneNumber=phoneNumber.value();
+                    food.address=address.value();
+                    food.index=foodCount;
+                    food.updateFoodCount(foodCount);
+                    food.update();
                     foodName.hide();
                     quantity.hide();
                     phoneNumber.hide();
                     address.hide();
+                    button.hide();
+                    this.receive.show();
+                    this.donate.show();
                 })
             })
 

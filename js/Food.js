@@ -18,9 +18,9 @@ getFoodCount(){
        })
    } 
    update(){
-       var foodRef="foods/food"+this.index;
+       var foodRef="food/food"+this.index;
        database.ref(foodRef).set({
-           foodName:this.foodName,
+           foodname:this.foodname,
            address:this.address,
            phoneNumber:this.phoneNumber,
            quantity:this.quantity
